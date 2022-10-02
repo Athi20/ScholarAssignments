@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "_Comments";
+}
+
+<h1>Comments</h1>
+
+<ul>
+    @foreach (var item in Model)//dynamic property
+    {
+        <li>
+            @item
+        </li>
+    }
+</ul>

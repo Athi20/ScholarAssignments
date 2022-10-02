@@ -1,0 +1,18 @@
+﻿@model LabApp.Areas.User.Models.LoginViewModel
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h1> User Login</h1>
+<form asp-action ="OnUserLogin" asp-controller="Login" method="post">
+    <div>
+        Username: <input type="text" asp-for="Username" />
+    </div>
+    <div>
+        Password: <input type="password" asp-for="Password" />
+    </div>
+    <div>
+        <input type="submit" value="Login" />
+    </div>
+</form>
+
